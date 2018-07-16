@@ -49,12 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\CustomerRentalInfo.cs" />
+    <Compile Include="DTOs\CustomerReservationInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository Interfaces\IAccountRepository.cs" />
+    <Compile Include="Repository Interfaces\ICarRepository.cs" />
+    <Compile Include="Repository Interfaces\IRentalRepository.cs" />
+    <Compile Include="Repository Interfaces\IReservationRepository.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Repository Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
