@@ -45,7 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data Contracts\CustomerRentalData.cs" />
+    <Compile Include="Data Contracts\CustomerReservationData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service Contracts\IAccountService.cs" />
     <Compile Include="Service Contracts\IInventoryService.cs" />
     <Compile Include="Service Contracts\IRentalService.cs" />
   </ItemGroup>
@@ -71,9 +74,7 @@
       <Name>CarRental.Common</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data Contracts\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
