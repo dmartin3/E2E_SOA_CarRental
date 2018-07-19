@@ -2,11 +2,12 @@
 using System.Threading.Tasks;
 using CarRental.Client.Entities;
 using CarRental.Common;
+using Core.Common.Contracts;
 using Core.Common.Exceptions;
 
 namespace CarRental.Client.Contracts.Service_Contracts {
   [ServiceContract]
-  public interface IAccountService {
+  public interface IAccountService : IServiceContract {
     [OperationContract]
     [FaultContract(typeof(NotFoundException))]
     [FaultContract(typeof(AuthorizationValidationException))]

@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 using CarRental.Client.Contracts.Data_Contracts;
 using CarRental.Client.Entities;
 using CarRental.Common;
+using Core.Common.Contracts;
 using Core.Common.Exceptions;
 
 namespace CarRental.Client.Contracts.Service_Contracts {
   [ServiceContract]
-  public interface IRentalService {
+  public interface IRentalService : IServiceContract {
     [OperationContract(Name = "RentCarToCustomerImmediately")]
     [TransactionFlow(TransactionFlowOption.Allowed)]
     [FaultContract(typeof(NotFoundException))]

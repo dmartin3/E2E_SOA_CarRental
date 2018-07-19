@@ -2,11 +2,12 @@
 using System.ServiceModel;
 using System.Threading.Tasks;
 using CarRental.Client.Entities;
+using Core.Common.Contracts;
 using Core.Common.Exceptions;
 
 namespace CarRental.Client.Contracts.Service_Contracts {
   [ServiceContract]
-  public interface IInventoryService {
+  public interface IInventoryService : IServiceContract {
     [OperationContract]
     [FaultContract(typeof(NotFoundException))]
     Car GetCar(int carId);

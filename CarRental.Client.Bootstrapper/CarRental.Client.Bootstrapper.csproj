@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MEFLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,10 +57,6 @@
     <ProjectReference Include="..\Core.Common.ServiceModel\Core.Common.ServiceModel.csproj">
       <Project>{73fbe0bf-9db9-498e-8aef-68210104d0c1}</Project>
       <Name>Core.Common.ServiceModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Core\Core.Common.UI\Core.Common.UI.csproj">
-      <Project>{5df27a6c-2466-4baa-b379-90d3d60ad5ba}</Project>
-      <Name>Core.Common.UI</Name>
     </ProjectReference>
     <ProjectReference Include="..\Core.Common\Core.Common.csproj">
       <Project>{f6bcff98-a714-4b7b-978f-23d812d1744a}</Project>
