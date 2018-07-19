@@ -1,14 +1,14 @@
 ﻿using System.ComponentModel.Composition;
-using System.ServiceModel;
-using CarRental.Business.Entities;
-using Core.Common.Contracts;
-using Core.Common.Exceptions;
 using System.Security.Permissions;
+using System.ServiceModel;
 using CarRental.Business.Contracts.Service_Contracts;
+using CarRental.Business.Entities;
 using CarRental.Common;
 using CarRental.Data.Contracts.Repository_Interfaces;
+using Core.Common.Contracts;
+using Core.Common.Exceptions;
 
-namespace CarRental.Business.Managers {
+namespace CarRental.Business.Managers.Managers {
   [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall,
                    ConcurrencyMode = ConcurrencyMode.Multiple,
                    ReleaseServiceInstanceOnTransactionComplete = false)]
