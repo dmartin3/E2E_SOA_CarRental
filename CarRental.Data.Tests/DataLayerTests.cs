@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using CarRental.Business.Bootstrapper;
 using CarRental.Business.Entities;
