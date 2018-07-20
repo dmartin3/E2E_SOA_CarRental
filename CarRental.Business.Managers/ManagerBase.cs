@@ -23,7 +23,12 @@ namespace CarRental.Business.Managers {
       }
 
       if (ObjectBase.Container != null) {
-        ObjectBase.Container.SatisfyImportsOnce(this);
+        try {
+          ObjectBase.Container.SatisfyImportsOnce(this);
+        }
+        catch (Exception e) {
+          // Do nothing so VS debug mode leaves me the hell alone.
+        }
       }
 
       if (!string.IsNullOrWhiteSpace(LoginName)) {
