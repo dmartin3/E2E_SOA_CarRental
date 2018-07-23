@@ -184,6 +184,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Binding\ViewModels\AccountLoginViewModel.js" />
+    <Compile Include="Controllers\API\AccountApiController.cs" />
     <Compile Include="Controllers\MVC\AccountController.cs" />
     <Compile Include="Controllers\MVC\HomeController.cs" />
     <Compile Include="Core\ApiControllerBase.cs" />
@@ -718,7 +719,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\API\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
